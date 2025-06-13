@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refreshing & Easy Salad Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+
+    }
+
+    .flow-step-icon {
+      border: 3px solid yellow;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-cyan-950 leading-tight">A Flavor-Packed Salad</h1>
+      <p class="text-xl md:text-2xl font-semibold text-cyan-700 mt-2">Ready in Minutes!</p>
+    </header>
+
+    <main>
+      <section id="ingredients" class="mb-12">
+        <h2 class="text-3xl font-bold text-center mb-8">What You'll Need</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold mb-4 text-emerald-500">🥗 For the Salad</h3>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🥬</span>
+                <div><span class="font-bold">1 medium</span> Chinese cabbage, thinly sliced</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥕</span>
+                <div><span class="font-bold">2</span> Carrots, grated</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥒</span>
+                <div><span class="font-bold">1</span> Cucumber, diced</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥚</span>
+                <div><span class="font-bold">2-3</span> Boiled eggs, whites sliced</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                <div><span class="font-bold">100g</span> Graviera cheese, cubed</div>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold mb-4 text-red-400">✨ For the Sauce</h3>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🍦</span>
+                <div><span class="font-bold">200g</span> Strained yogurt</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍳</span>
+                <div><span class="font-bold">2</span> Hard-boiled egg yolks</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">💛</span>
+                <div><span class="font-bold">1 tsp</span> Dijon mustard</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🫒</span>
+                <div><span class="font-bold">3 tbsp</span> Olive oil</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍋</span>
+                <div><span class="font-bold">Zest & Juice of 1/2</span> Lemon</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧂</span>
+                <div><span class="font-bold">Pinch of</span> Salt & Pepper</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="text-center bg-cyan-700 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <div class="text-5xl font-black">~15</div>
+            <div class="text-lg font-semibold mt-1">Total Minutes</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">4</div>
+            <div class="text-lg font-semibold mt-1">Easy Steps</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">~4</div>
+            <div class="text-lg font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-16">The 4-Step Method</h2>
+        <div class="flex flex-col md:flex-row justify-between items-start text-center gap-y-12 md:gap-x-8">
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-emerald-500 mb-4">
+              1</div>
+            <h3 class="text-xl font-bold mb-2">Prep Veggies</h3>
+            <p class="text-base">Slice the cabbage, grate the carrots, and dice the cucumber. Combine them all in a
+              large bowl.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-red-500 mb-4">
+              2</div>
+            <h3 class="text-xl font-bold mb-2">Add Protein</h3>
+            <p class="text-base">Boil the eggs. Slice the whites and cube the cheese, then add them to the salad bowl.
+              Set the yolks aside.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-amber-400 mb-4">
+              3</div>
+            <h3 class="text-xl font-bold mb-2">Create Sauce</h3>
+            <p class="text-base">In a separate bowl, mash the egg yolks and whisk vigorously with all other sauce
+              ingredients until smooth.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-cyan-700 mb-4">
+              4</div>
+            <h3 class="text-xl font-bold mb-2">Combine & Serve</h3>
+            <p class="text-base">Pour the creamy sauce over the salad and toss gently until everything is perfectly
+              coated. Enjoy immediately!</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="nutrition" class="my-12">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-center mb-2">Estimated Nutritional Breakdown</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">This chart provides a general estimate of the
+            macronutrient composition per serving. The combination of cheese, eggs, and yogurt provides a good source of
+            protein and fats, balanced with carbohydrates from the fresh vegetables.</p>
+          <div class="chart-container">
+            <canvas id="nutritionChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold">Made with ❤️ from a simple recipe.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('nutritionChart').getContext('2d');
+
+      const originalLabels = ['Healthy Fats (from Olive Oil, Cheese, Yolk)', 'Protein (from Egg, Cheese, Yogurt)', 'Carbohydrates (from Vegetables)'];
+
+
+      const nutritionChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: originalLabels,
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [45, 30, 25],
+            backgroundColor: [
+              '#FFD166',
+              '#FF6B6B',
+              '#06D6A0',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
