@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refreshing Protein Salad Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+    }
+
+    .flow-step-icon {
+      border: 3px solid #10b981;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-green-50 to-emerald-100 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-emerald-900 leading-tight">Protein-Rich Fresh Salad</h1>
+      <p class="text-xl md:text-2xl font-semibold text-emerald-700 mt-2">Complete Meal in a Bowl!</p>
+    </header>
+
+    <main>
+      <section id="ingredients" class="mb-12">
+        <h2 class="text-3xl font-bold text-center mb-8">What You'll Need</h2>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h3 class="text-2xl font-bold mb-6 text-emerald-600 text-center">🥗 All Ingredients</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🥒</span>
+                <div><span class="font-bold">3</span> Cucumbers, diced</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥑</span>
+                <div><span class="font-bold">1</span> Avocado, cubed</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧅</span>
+                <div><span class="font-bold">1/2</span> Red onion, chopped</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                <div><span class="font-bold">60g</span> Cream cheese</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍗</span>
+                <div><span class="font-bold">150g</span> Boiled chicken breast</div>
+              </li>
+            </ul>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🌽</span>
+                <div><span class="font-bold">70g</span> Corn kernels</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥄</span>
+                <div><span class="font-bold">1 tbsp</span> Mayonnaise</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🌿</span>
+                <div><span class="font-bold">2 tbsp</span> Fresh dill</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍋</span>
+                <div><span class="font-bold">Juice of 1/2</span> Lemon</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧂</span>
+                <div><span class="font-bold">2 pinches</span> Salt & Pepper</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="text-center bg-emerald-600 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <div class="text-5xl font-black">10</div>
+            <div class="text-lg font-semibold mt-1">Minutes Prep</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">3</div>
+            <div class="text-lg font-semibold mt-1">Easy Steps</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">2</div>
+            <div class="text-lg font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-16">Simple 3-Step Method</h2>
+        <div class="flex flex-col md:flex-row justify-between items-start text-center gap-y-12 md:gap-x-8">
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-emerald-600 mb-4">
+              1</div>
+            <h3 class="text-xl font-bold mb-2">Prep & Combine</h3>
+            <p class="text-base">In a large bowl, combine diced cucumbers, chopped red onion, corn, cream cheese, mayonnaise, cubed avocado, fresh dill, and boiled chicken breast.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-emerald-600 mb-4">
+              2</div>
+            <h3 class="text-xl font-bold mb-2">Season & Mix</h3>
+            <p class="text-base">Add lemon juice, salt, and pepper to the bowl. Cover and shake or mix vigorously until all ingredients are well combined.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-emerald-600 mb-4">
+              3</div>
+            <h3 class="text-xl font-bold mb-2">Serve & Enjoy</h3>
+            <p class="text-base">Open and enjoy this delicious protein-packed salad that makes a complete, nutritious meal!</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="nutrition" class="my-12">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-center mb-2">Estimated Nutritional Breakdown</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">Per serving estimate based on ingredients. This salad is rich in protein from chicken and cream cheese, healthy fats from avocado, and provides good fiber from vegetables.</p>
+          <div class="chart-container">
+            <canvas id="nutritionChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold">A complete protein-rich meal! 🥗</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('nutritionChart').getContext('2d');
+
+      const nutritionChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Protein (Chicken, Cream Cheese)', 'Healthy Fats (Avocado, Mayo)', 'Carbohydrates (Vegetables, Corn)'],
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [40, 35, 25],
+            backgroundColor: [
+              '#10b981',
+              '#f59e0b',
+              '#3b82f6',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

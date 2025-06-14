@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Oven Omelet Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+    }
+
+    .flow-step-icon {
+      border: 3px solid #f59e0b;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-amber-900 leading-tight">Hearty Oven Omelet</h1>
+      <p class="text-xl md:text-2xl font-semibold text-amber-700 mt-2">Using What You Have in Your Pantry!</p>
+    </header>
+
+    <main>
+      <section id="ingredients" class="mb-12">
+        <h2 class="text-3xl font-bold text-center mb-8">What You'll Need</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-xl font-bold mb-4 text-amber-600">🥔 For the Base</h3>
+            <ul class="space-y-2 text-base">
+              <li class="flex items-center"><span class="text-xl mr-2">🥔</span>
+                <div><span class="font-bold">3 medium</span> Potatoes, sliced</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🍆</span>
+                <div><span class="font-bold">1</span> Eggplant, sliced</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🫒</span>
+                <div><span class="font-bold">2 tbsp</span> Olive oil</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🧂</span>
+                <div>Salt & Pepper</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-xl font-bold mb-4 text-red-500">🥚 For the Omelet</h3>
+            <ul class="space-y-2 text-base">
+              <li class="flex items-center"><span class="text-xl mr-2">🥚</span>
+                <div><span class="font-bold">6 medium</span> Eggs</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🥛</span>
+                <div><span class="font-bold">150ml</span> Light cream (12% fat)</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🧂</span>
+                <div><span class="font-bold">1/2 tsp each:</span> Salt, pepper</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🌶️</span>
+                <div><span class="font-bold">1/2 tsp each:</span> Sweet paprika, oregano</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-xl font-bold mb-4 text-green-600">🌶️ For the Vegetables</h3>
+            <ul class="space-y-2 text-base">
+              <li class="flex items-center"><span class="text-xl mr-2">🧅</span>
+                <div><span class="font-bold">1</span> Onion, chopped</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🌶️</span>
+                <div><span class="font-bold">1 small</span> Red bell pepper, cubed</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🫑</span>
+                <div><span class="font-bold">1 small</span> Green bell pepper, cubed</div>
+              </li>
+              <li class="flex items-center"><span class="text-xl mr-2">🧈</span>
+                <div><span class="font-bold">40g</span> Butter + 3 tbsp olive oil</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="text-center bg-amber-600 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
+          <div>
+            <div class="text-4xl font-black">10</div>
+            <div class="text-base font-semibold mt-1">Min Prep</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black">60</div>
+            <div class="text-base font-semibold mt-1">Min Baking</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black">5</div>
+            <div class="text-base font-semibold mt-1">Steps</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black">6</div>
+            <div class="text-base font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-12">5-Step Method</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-amber-600 mb-4">1</div>
+            <h3 class="text-lg font-bold mb-2">Prep Base Layer</h3>
+            <p class="text-sm">Season sliced potatoes and eggplant with oil, salt, and pepper. Arrange in 20×30cm baking dish. Bake at 180°C for 20-25 minutes.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-amber-600 mb-4">2</div>
+            <h3 class="text-lg font-bold mb-2">Sauté Vegetables</h3>
+            <p class="text-sm">Melt butter with olive oil in a pan. Sauté onion and bell peppers for 3-4 minutes until softened.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-amber-600 mb-4">3</div>
+            <h3 class="text-lg font-bold mb-2">Make Egg Mixture</h3>
+            <p class="text-sm">Beat eggs with cream, salt, pepper, paprika, and oregano until well combined.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-amber-600 mb-4">4</div>
+            <h3 class="text-lg font-bold mb-2">Layer & Pour</h3>
+            <p class="text-sm">Spread sautéed vegetables over the baked potatoes and eggplant. Pour egg mixture evenly over everything.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4 md:col-span-2 lg:col-span-1">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-amber-600 mb-4">5</div>
+            <h3 class="text-lg font-bold mb-2">Bake & Serve</h3>
+            <p class="text-sm">Bake at 180°C for 25-30 minutes until lightly golden. Let rest 5 minutes before cutting and serving hot.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="nutrition" class="my-12">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-center mb-2">Estimated Nutritional Breakdown</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">Per serving estimate. This hearty omelet provides high-quality protein from eggs and cream, complex carbohydrates from potatoes and vegetables, plus healthy fats.</p>
+          <div class="chart-container">
+            <canvas id="nutritionChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold">Perfect for using pantry ingredients! 🍳</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('nutritionChart').getContext('2d');
+
+      const nutritionChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Protein (Eggs, Cream)', 'Carbohydrates (Potatoes, Vegetables)', 'Healthy Fats (Butter, Oil)'],
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [35, 40, 25],
+            backgroundColor: [
+              '#f59e0b',
+              '#8b5cf6',
+              '#ef4444',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

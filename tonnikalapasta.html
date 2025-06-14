@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creamy Tuna Pasta Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+    }
+
+    .flow-step-icon {
+      border: 3px solid #0ea5e9;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-blue-900 leading-tight">Creamy Tuna Pasta</h1>
+      <p class="text-xl md:text-2xl font-semibold text-blue-700 mt-2">Quick & Delicious Weeknight Dinner!</p>
+    </header>
+
+    <main>
+      <section id="ingredients" class="mb-12">
+        <h2 class="text-3xl font-bold text-center mb-8">What You'll Need</h2>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h3 class="text-2xl font-bold mb-6 text-blue-600 text-center">🍝 All Ingredients</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🍝</span>
+                <div><span class="font-bold">180g</span> Pasta (fusilli or shells)</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧈</span>
+                <div><span class="font-bold">1 tbsp</span> Butter or margarine</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧅</span>
+                <div><span class="font-bold">1</span> Onion, chopped</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍅</span>
+                <div><span class="font-bold">1 tbsp</span> Tomato paste</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍅</span>
+                <div><span class="font-bold">1</span> Tomato, cubed</div>
+              </li>
+            </ul>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🐟</span>
+                <div><span class="font-bold">1 can (185/140g)</span> Tuna, drained</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">💧</span>
+                <div><span class="font-bold">100ml</span> Pasta water</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍋</span>
+                <div><span class="font-bold">½ tbsp</span> Lemon juice</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                <div><span class="font-bold">125g</span> Green pepper cheese, cubed</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🌿</span>
+                <div><span class="font-bold">2 tbsp</span> Fresh dill, chopped</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="text-center bg-blue-600 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <div class="text-5xl font-black">20</div>
+            <div class="text-lg font-semibold mt-1">Total Minutes</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">5</div>
+            <div class="text-lg font-semibold mt-1">Easy Steps</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">4</div>
+            <div class="text-lg font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Simple 5-Step Method</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-blue-600 mb-4">1</div>
+            <h3 class="text-lg font-bold mb-2">Cook Pasta</h3>
+            <p class="text-sm">Boil pasta according to package instructions. Reserve 100ml cooking water before draining.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-blue-600 mb-4">2</div>
+            <h3 class="text-lg font-bold mb-2">Sauté Base</h3>
+            <p class="text-sm">Heat butter in pan. Sauté chopped onion and tomato paste until onion is translucent.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-blue-600 mb-4">3</div>
+            <h3 class="text-lg font-bold mb-2">Add Tuna & Tomato</h3>
+            <p class="text-sm">Add cubed tomato and drained tuna. Heat for a few minutes until warmed through.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-blue-600 mb-4">4</div>
+            <h3 class="text-lg font-bold mb-2">Make Sauce</h3>
+            <p class="text-sm">Add pasta water, lemon juice, and cubed cheese. Heat until cheese melts. Add dill.</p>
+          </div>
+
+          <div class="flow-step flex flex-col items-center text-center px-4 md:col-span-2 lg:col-span-1">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-2xl font-bold text-blue-600 mb-4">5</div>
+            <h3 class="text-lg font-bold mb-2">Combine & Serve</h3>
+            <p class="text-sm">Mix drained pasta with the creamy tuna sauce. Serve immediately while hot.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="nutrition" class="my-12">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-center mb-2">Nutritional Information</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">Per 100g serving: 189 kcal, 11.1g protein, 19.4g carbs, 7.1g fat. High in protein from tuna and cheese, with complex carbs from pasta.</p>
+          <div class="chart-container">
+            <canvas id="nutritionChart"></canvas>
+          </div>
+          <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+            <div class="bg-gray-50 p-3 rounded">
+              <div class="font-bold">189</div>
+              <div>kcal/100g</div>
+            </div>
+            <div class="bg-gray-50 p-3 rounded">
+              <div class="font-bold">11.1g</div>
+              <div>Protein</div>
+            </div>
+            <div class="bg-gray-50 p-3 rounded">
+              <div class="font-bold">19.4g</div>
+              <div>Carbs</div>
+            </div>
+            <div class="bg-gray-50 p-3 rounded">
+              <div class="font-bold">7.1g</div>
+              <div>Fat</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold">Perfect comfort food in 20 minutes! 🍝</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('nutritionChart').getContext('2d');
+
+      const nutritionChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Carbohydrates (Pasta)', 'Protein (Tuna, Cheese)', 'Fats (Cheese, Butter)'],
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [48, 29, 23],
+            backgroundColor: [
+              '#3b82f6',
+              '#10b981',
+              '#f59e0b',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

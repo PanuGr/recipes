@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mexican Bean Stew Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+    }
+
+    .flow-step-icon {
+      border: 3px solid #F59E0B;
+    }
+
+    .tab-button {
+      transition: all 0.3s ease;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-red-50 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-red-800 leading-tight">Mexican Bean Stew</h1>
+      <p class="text-xl md:text-2xl font-semibold text-orange-600 mt-2">Hearty & Flavorful!</p>
+    </header>
+
+    <!-- Version Tabs -->
+    <div class="flex justify-center mb-8">
+      <div class="bg-white rounded-lg shadow-lg p-1">
+        <button onclick="showTab('original')" id="originalTab" class="tab-button px-6 py-3 rounded-md font-semibold text-white bg-red-600">
+          Original Recipe
+        </button>
+        <button onclick="showTab('healthy')" id="healthyTab" class="tab-button px-6 py-3 rounded-md font-semibold text-gray-600 hover:bg-gray-100">
+          Healthier Version
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <!-- Original Recipe Tab -->
+      <div id="originalContent" class="tab-content active">
+        <section id="ingredients-original" class="mb-12">
+          <h2 class="text-3xl font-bold text-center mb-8 text-red-700">What You'll Need - Original</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-orange-500">🌶️ Main Ingredients</h3>
+              <ul class="space-y-3 text-lg">
+                <li class="flex items-center"><span class="text-2xl mr-3">🫘</span>
+                  <div><span class="font-bold">1 can (400g)</span> Pinto beans</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">⚫</span>
+                  <div><span class="font-bold">1 pack (185g)</span> Black beans</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🤍</span>
+                  <div><span class="font-bold">1 can (400g)</span> White beans in tomato sauce</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧅</span>
+                  <div><span class="font-bold">½ (150g)</span> Leek</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🍅</span>
+                  <div><span class="font-bold">2</span> Tomatoes</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧄</span>
+                  <div><span class="font-bold">3 cloves</span> Garlic</div>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-red-500">🧀 Toppings & Flavor</h3>
+              <ul class="space-y-3 text-lg">
+                <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                  <div><span class="font-bold">250g</span> Cheddar cheese dip</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🌽</span>
+                  <div><span class="font-bold">100g</span> Nachos (base + topping)</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                  <div><span class="font-bold">75g</span> Mexican cheese blend</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🍋</span>
+                  <div><span class="font-bold">2 tsp</span> Lime/lemon juice</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧂</span>
+                  <div><span class="font-bold">½ tsp each</span> Salt & pepper</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="nutrition-original" class="my-12">
+          <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-2">Nutritional Breakdown - Original</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">Rich in protein from beans and cheese, with moderate carbs and higher fat content from dairy products and nachos.</p>
+            <div class="chart-container">
+              <canvas id="nutritionChartOriginal"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Healthy Recipe Tab -->
+      <div id="healthyContent" class="tab-content">
+        <section id="ingredients-healthy" class="mb-12">
+          <h2 class="text-3xl font-bold text-center mb-8 text-green-700">What You'll Need - Healthier Version</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-orange-500">🌶️ Main Ingredients</h3>
+              <ul class="space-y-3 text-lg">
+                <li class="flex items-center"><span class="text-2xl mr-3">🫘</span>
+                  <div><span class="font-bold">1 can (400g)</span> Pinto beans</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">⚫</span>
+                  <div><span class="font-bold">1 pack (185g)</span> Black beans</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🤍</span>
+                  <div><span class="font-bold">1 can (400g)</span> White beans in tomato sauce</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧅</span>
+                  <div><span class="font-bold">½ (150g)</span> Leek</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🍅</span>
+                  <div><span class="font-bold">2</span> Tomatoes</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧄</span>
+                  <div><span class="font-bold">3 cloves</span> Garlic</div>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 class="text-2xl font-bold mb-4 text-green-500">🥑 Healthy Alternatives</h3>
+              <ul class="space-y-3 text-lg">
+                <li class="flex items-center"><span class="text-2xl mr-3">🥑</span>
+                  <div><span class="font-bold">1 large</span> Avocado (mashed, replaces cheese dip)</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🌰</span>
+                  <div><span class="font-bold">50g</span> Roasted pumpkin seeds (replaces nachos)</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                  <div><span class="font-bold">30g</span> Reduced-fat cheese (optional)</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🍋</span>
+                  <div><span class="font-bold">2 tsp</span> Lime/lemon juice</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🧂</span>
+                  <div><span class="font-bold">½ tsp each</span> Salt & pepper</div>
+                </li>
+                <li class="flex items-center"><span class="text-2xl mr-3">🌿</span>
+                  <div><span class="font-bold">Fresh</span> Cilantro & cumin</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="nutrition-healthy" class="my-12">
+          <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-2">Nutritional Breakdown - Healthier Version</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">Higher fiber and plant-based nutrients, with healthy fats from avocado and seeds, lower overall calories and saturated fat.</p>
+            <div class="chart-container">
+              <canvas id="nutritionChartHealthy"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Shared preparation steps -->
+      <section id="highlights" class="text-center bg-red-600 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <div class="text-5xl font-black">~35</div>
+            <div class="text-lg font-semibold mt-1">Total Minutes</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">5</div>
+            <div class="text-lg font-semibold mt-1">Easy Steps</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">4-6</div>
+            <div class="text-lg font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-16 text-red-700">The 5-Step Method</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="flow-step relative flex flex-col items-center px-4 text-center">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-red-600 mb-4">
+              1</div>
+            <h3 class="text-xl font-bold mb-2">Prep Beans</h3>
+            <p class="text-base">Rinse pinto and black beans. Keep white beans in tomato sauce as is.</p>
+          </div>
+
+          <div class="flow-step relative flex flex-col items-center px-4 text-center">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-orange-500 mb-4">
+              2</div>
+            <h3 class="text-xl font-bold mb-2">Chop Vegetables</h3>
+            <p class="text-base">Finely chop leek, dice tomatoes, and mince garlic cloves.</p>
+          </div>
+
+          <div class="flow-step relative flex flex-col items-center px-4 text-center">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-yellow-500 mb-4">
+              3</div>
+            <h3 class="text-xl font-bold mb-2">Combine & Cook</h3>
+            <p class="text-base">Mix all beans, vegetables, and cheese dip (or mashed avocado). Simmer 10 minutes.</p>
+          </div>
+
+          <div class="flow-step relative flex flex-col items-center px-4 text-center">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-green-600 mb-4">
+              4</div>
+            <h3 class="text-xl font-bold mb-2">Layer & Top</h3>
+            <p class="text-base">Layer nachos (or pumpkin seeds) in baking dish, add bean mixture, top with cheese/seeds.</p>
+          </div>
+
+          <div class="flow-step relative flex flex-col items-center px-4 text-center md:col-span-2 lg:col-span-1">
+            <div class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-red-700 mb-4">
+              5</div>
+            <h3 class="text-xl font-bold mb-2">Bake & Serve</h3>
+            <p class="text-base">Bake at 225°C for 15 minutes. Add lime juice and serve with guacamole!</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold">Made with ❤️ from a Valio recipe - adapted for health!</p>
+    </footer>
+  </div>
+
+  <script>
+    function showTab(tabName) {
+      // Hide all tab contents
+      document.getElementById('originalContent').classList.remove('active');
+      document.getElementById('healthyContent').classList.remove('active');
+      
+      // Remove active styles from all buttons
+      document.getElementById('originalTab').classList.remove('bg-red-600', 'text-white');
+      document.getElementById('originalTab').classList.add('text-gray-600', 'hover:bg-gray-100');
+      document.getElementById('healthyTab').classList.remove('bg-green-600', 'text-white');
+      document.getElementById('healthyTab').classList.add('text-gray-600', 'hover:bg-gray-100');
+      
+      // Show selected tab content and style button
+      if (tabName === 'original') {
+        document.getElementById('originalContent').classList.add('active');
+        document.getElementById('originalTab').classList.remove('text-gray-600', 'hover:bg-gray-100');
+        document.getElementById('originalTab').classList.add('bg-red-600', 'text-white');
+      } else {
+        document.getElementById('healthyContent').classList.add('active');
+        document.getElementById('healthyTab').classList.remove('text-gray-600', 'hover:bg-gray-100');
+        document.getElementById('healthyTab').classList.add('bg-green-600', 'text-white');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      // Original recipe chart
+      const ctxOriginal = document.getElementById('nutritionChartOriginal').getContext('2d');
+      const nutritionChartOriginal = new Chart(ctxOriginal, {
+        type: 'doughnut',
+        data: {
+          labels: ['Protein (Beans, Cheese)', 'Carbohydrates (Beans, Nachos)', 'Fats (Cheese, Nachos)'],
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [25, 45, 30],
+            backgroundColor: [
+              '#EF4444',
+              '#F97316', 
+              '#FCD34D',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+
+      // Healthy recipe chart  
+      const ctxHealthy = document.getElementById('nutritionChartHealthy').getContext('2d');
+      const nutritionChartHealthy = new Chart(ctxHealthy, {
+        type: 'doughnut',
+        data: {
+          labels: ['Protein (Beans)', 'Carbohydrates (Beans, Vegetables)', 'Healthy Fats (Avocado, Seeds)'],
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [30, 50, 20],
+            backgroundColor: [
+              '#10B981',
+              '#34D399',
+              '#6EE7B7',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF', 
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
