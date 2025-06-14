@@ -1,4 +1,21 @@
 # A collection of recipes
-## Salads
-- [Salad with mustard dressing](salad-eggs.html)
-- 
+## Prompt Claude
+Create separate infographics for these recipes:
+List the amount of ingredients and shortly the instructions on how to make it.
+Use English language. Also add a chart with estimated breakdown of nutritional data based on the ingredients used.
+You can use the attached index.html as reference
+
+## List of recipes
+
+- [2-versiota-meksikolainen-papupata.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/2-versiota-meksikolainen-papupata.html)
+- [apple-chocolate-cake.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/apple-chocolate-cake.html)
+- [avocado-salad.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/avocado-salad.html)
+- [eggplants-stuffed.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/eggplants-stuffed.html)
+- [oven-baked-potatoes.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/oven-baked-potatoes.html)
+- [oven_crepes.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/oven_crepes.html)
+- [oven_omelet.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/oven_omelet.html)
+- [salad-eggs.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/salad-eggs.html)
+- [tonnikalapasta.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/tonnikalapasta.html)
+- [vege-giouvetsi.html](https://github.com/PanuGr/recipes/blob/679a7d7e37c7efc436fe96f62e2502e7b9385114/vege-giouvetsi.html)
+- pizza
+- linssikeito
