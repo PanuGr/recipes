@@ -1,9 +1,10 @@
-# A collection of recipes
+# A collection of Greek recipes
+<!-- This line will not be displayed in the rendered Markdown 
 ## Prompt Claude
 Create separate infographics for these recipes:
-List the amount of ingredients and shortly the instructions on how to make it.
+List the amount of ingredients and shortly the iCnstructions on how to make it.
 Use English language. Also add a chart with estimated breakdown of nutritional data based on the ingredients used.
-You can use the attached index.html as reference
+You can use the attached index.html as reference-->
 
 ## List of recipes
 
