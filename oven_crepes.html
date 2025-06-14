@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheet Pan Crepes in 5 Minutes</title>
+    <meta name="description" content="A simple baked crepe recipe that serves 6 people in about 25 minutes total. The ingredients include basic pantry staples like milk, eggs, flour, and sugar.
+"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+    }
+
+    .flow-step-icon {
+      border: 3px solid #f59e0b;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-amber-900 leading-tight">Sheet Pan Crepes</h1>
+      <p class="text-xl md:text-2xl font-semibold text-orange-700 mt-2">Ready in 5 Minutes!</p>
+    </header>
+
+    <main>
+      <section id="ingredients" class="mb-12">
+        <h2 class="text-3xl font-bold text-center mb-8">What You'll Need</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold mb-4 text-amber-600">🥞 For the Crepes</h3>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🥛</span>
+                <div><span class="font-bold">400ml</span> Milk (1.5 cups)</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥚</span>
+                <div><span class="font-bold">2</span> Medium eggs</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🌾</span>
+                <div><span class="font-bold">160g</span> All-purpose flour (1 cup)</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍯</span>
+                <div><span class="font-bold">3 tbsp</span> Sugar</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🫒</span>
+                <div><span class="font-bold">2 tbsp</span> Sunflower oil</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🌟</span>
+                <div><span class="font-bold">2 packets</span> Vanilla extract</div>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold mb-4 text-orange-500">🍫 For Serving</h3>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🍫</span>
+                <div><span class="font-bold">As desired</span> Chocolate spread</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍓</span>
+                <div><span class="font-bold">Optional</span> Fresh fruits</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍯</span>
+                <div><span class="font-bold">Optional</span> Honey or syrup</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="text-center bg-amber-600 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div>
+            <div class="text-5xl font-black">25</div>
+            <div class="text-lg font-semibold mt-1">Total Minutes</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">4</div>
+            <div class="text-lg font-semibold mt-1">Easy Steps</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">6</div>
+            <div class="text-lg font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-16">The 4-Step Method</h2>
+        <div class="flex flex-col md:flex-row justify-between items-start text-center gap-y-12 md:gap-x-8">
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-amber-600 mb-4">
+              1</div>
+            <h3 class="text-xl font-bold mb-2">Mix Wet Ingredients</h3>
+            <p class="text-base">In a bowl, combine milk, sugar, eggs, vanilla, and oil. Whisk thoroughly until well combined.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-orange-500 mb-4">
+              2</div>
+            <h3 class="text-xl font-bold mb-2">Add Flour</h3>
+            <p class="text-base">Gradually add flour and continue whisking until you have a smooth batter without lumps.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-red-500 mb-4">
+              3</div>
+            <h3 class="text-xl font-bold mb-2">Prepare & Bake</h3>
+            <p class="text-base">Line a large baking sheet with parchment paper. Pour batter and bake at 180°C (356°F) for 20 minutes.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-green-600 mb-4">
+              4</div>
+            <h3 class="text-xl font-bold mb-2">Cool & Serve</h3>
+            <p class="text-base">Let cool slightly, cut into squares, add chocolate spread, roll up and enjoy!</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="nutrition" class="my-12">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-center mb-2">Estimated Nutritional Breakdown</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">This chart provides a general estimate per serving. The crepes are primarily carbohydrate-based from flour and milk, with moderate protein from eggs and milk, and some fats from oil and eggs.</p>
+          <div class="chart-container">
+            <canvas id="nutritionChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold">Made with ❤️ for easy breakfast treats.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('nutritionChart').getContext('2d');
+
+      const originalLabels = ['Carbohydrates (from Flour, Milk, Sugar)', 'Protein (from Eggs, Milk)', 'Fats (from Oil, Eggs)'];
+
+      const nutritionChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: originalLabels,
+          datasets: [{
+            label: 'Macro Distribution',
+            data: [60, 25, 15],
+            backgroundColor: [
+              '#F59E0B',
+              '#EF4444',
+              '#10B981',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start"
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
