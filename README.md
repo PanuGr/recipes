@@ -1,4 +1,4 @@
-# A collection of Greek recipes
+# A collection of recipes
 <!-- This line will not be displayed in the rendered Markdown 
 ## Prompt Claude
 Create separate infographics for these recipes:
