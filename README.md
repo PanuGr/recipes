@@ -26,7 +26,7 @@ You can use the attached index.html as reference-->
 - [apple-chocolate-cake](apple-chocolate-cake.html)
 - [oven_crepes](oven_crepes.html)
 
-<small>Build by <a href="http://digisolutech.netlify.app" target="_blank">DigiSolutech</a></small>
+By [DigiSolutech](http://digisolutech.netlify.app)
 
 
 
