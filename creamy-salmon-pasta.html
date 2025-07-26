@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creamy Salmon Pasta Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: system-ui;
+    }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1/1;
+      margin: auto;
+    }
+
+    .flow-step-icon {
+      border: 3px solid #ff6b6b;
+    }
+
+    .ingredient-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .sauce-card {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-red-50 text-gray-800">
+
+  <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+    <header class="text-center my-8 md:my-12">
+      <h1 class="text-4xl md:text-6xl font-black text-orange-900 leading-tight">Creamy Salmon Pasta</h1>
+      <p class="text-xl md:text-2xl font-semibold text-red-600 mt-2">An Easy Meal You'll Love!</p>
+    </header>
+
+    <main>
+      <section id="ingredients" class="mb-12">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">What You'll Need</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="ingredient-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <h3 class="text-2xl font-bold mb-4 text-yellow-200">🍝 Main Ingredients</h3>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🐟</span>
+                <div><span class="font-bold">400g</span> Salmon fillet</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍝</span>
+                <div><span class="font-bold">300g</span> Pasta spirals</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🍅</span>
+                <div><span class="font-bold">350g</span> Cherry tomatoes</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                <div><span class="font-bold">300g</span> Cream cheese</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🥬</span>
+                <div><span class="font-bold">60g</span> Spinach</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="sauce-card p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <h3 class="text-2xl font-bold mb-4 text-yellow-200">🌿 Seasonings & Extras</h3>
+            <ul class="space-y-3 text-lg">
+              <li class="flex items-center"><span class="text-2xl mr-3">🫒</span>
+                <div><span class="font-bold">2 tbsp</span> Olive oil</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧂</span>
+                <div><span class="font-bold">To taste</span> Salt</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🌶️</span>
+                <div><span class="font-bold">To taste</span> Black pepper</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🌿</span>
+                <div><span class="font-bold">To taste</span> Oregano</div>
+              </li>
+              <li class="flex items-center"><span class="text-2xl mr-3">🧀</span>
+                <div><span class="font-bold">For serving</span> Graviera cheese</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights"
+        class="text-center bg-gradient-to-r from-orange-600 to-red-600 text-white p-8 rounded-xl shadow-lg my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-8">
+          <div>
+            <div class="text-5xl font-black">10</div>
+            <div class="text-lg font-semibold mt-1">Prep Minutes</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">25</div>
+            <div class="text-lg font-semibold mt-1">Cook Minutes</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">Easy</div>
+            <div class="text-lg font-semibold mt-1">Difficulty</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black">2-3</div>
+            <div class="text-lg font-semibold mt-1">Servings</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="my-12">
+        <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Simple 4-Step Method</h2>
+        <div class="flex flex-col md:flex-row justify-between items-start text-center gap-y-12 md:gap-x-8">
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-orange-600 mb-4 shadow-lg">
+              1</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Prepare Oven Dish</h3>
+            <p class="text-base text-gray-600">In a 28-30cm baking dish, layer salmon pieces, cherry tomatoes, spinach,
+              cream cheese, olive oil, salt, pepper, and oregano.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-red-500 mb-4 shadow-lg">
+              2</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Bake</h3>
+            <p class="text-base text-gray-600">Bake in preheated oven at 200°C (392°F) for 20-25 minutes until
+              vegetables are tender.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-amber-500 mb-4 shadow-lg">
+              3</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Cook Pasta</h3>
+            <p class="text-base text-gray-600">Meanwhile, cook pasta spirals in salted boiling water for 2 minutes less
+              than package instructions.</p>
+          </div>
+
+          <div class="flow-step relative flex-1 flex flex-col items-center px-4">
+            <div
+              class="flow-step-icon w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl font-bold text-green-600 mb-4 shadow-lg">
+              4</div>
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Combine & Serve</h3>
+            <p class="text-base text-gray-600">Mash baked ingredients with a fork, add drained pasta and Graviera
+              cheese. Mix well and serve immediately!</p>
+          </div>
+        </div>
+      </section>
+
+      <img src='./img/pasta-lohi.avif' loading='lazy' width='1536' height='864' alt='Oven-Baked potatoes'
+        aria-hidden='true' class='' decoding='async' />
+
+
+      <section id="nutrition" class="my-12">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-t-4 border-orange-500">
+          <h2 class="text-3xl font-bold text-center mb-2 text-gray-800">Estimated Nutritional Breakdown</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">This chart shows the approximate macronutrient
+            distribution per serving. The salmon and cream cheese provide high-quality protein and healthy fats, while
+            the pasta contributes complex carbohydrates for sustained energy.</p>
+          <div class="chart-container">
+            <canvas id="nutritionChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-200">
+      <p class="text-lg font-semibold text-gray-700">Made with ❤️ for pasta lovers everywhere!</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const ctx = document.getElementById('nutritionChart').getContext('2d');
+
+      const originalLabels = ['Healthy Fats (Salmon, Cream Cheese, Olive Oil)', 'Protein (Salmon, Cream Cheese, Graviera)', 'Carbohydrates (Pasta, Vegetables)'];
+
+      const nutritionChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: originalLabels,
+          datasets: [{
+            label: 'Macro Distribution (%)',
+            data: [35, 30, 35],
+            backgroundColor: [
+              '#FF6B6B',
+              '#4ECDC4',
+              '#45B7D1',
+            ],
+            borderColor: [
+              '#FFFFFF',
+              '#FFFFFF',
+              '#FFFFFF',
+            ],
+            borderWidth: 4,
+            hoverOffset: 16
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '40%',
+          plugins: {
+            legend: {
+              position: 'bottom',
+              align: "start",
+              labels: {
+                padding: 20,
+                font: {
+                  size: 12
+                }
+              }
+            },
+            tooltip: {
+              callbacks: {
+                label: function (context) {
+                  return context.label + ': ' + context.parsed + '%';
+                }
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

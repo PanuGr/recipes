@@ -1,10 +1,14 @@
 # A collection of recipes
 <!-- This line will not be displayed in the rendered Markdown 
 ## Prompt Claude
-Create separate infographics for these recipes:
-List the amount of ingredients and shortly the iCnstructions on how to make it.
-Use English language. Also add a chart with estimated breakdown of nutritional data based on the ingredients used.
-You can use the attached index.html as reference-->
+https://live-kitchen.gr/...
+
+Create an infographic with this recipe:
+- List the amount of ingredients and shortly the instructions on how to make it.
+- Use English language. 
+- Add a chart with estimated breakdown of nutritional data based on the ingredients used.
+You can use the attached index.html as reference
+-->
 
 ## List of recipes
 ### Meat
@@ -12,6 +16,7 @@ You can use the attached index.html as reference-->
 ### Fish
 - [tonnikalapasta](tonnikalapasta.html)
 - lohi uunissa
+- [creamy pasta with salmon](creamy-salmon-pasta.html)
 ### Vegetables
 - [vege-giouvetsi](vege-giouvetsi.html)
 - linssikeito
